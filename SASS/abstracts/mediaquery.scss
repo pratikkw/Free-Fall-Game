@@ -1,0 +1,48 @@
+@media only screen and (max-width: 1000px) {
+  :root {
+    // FONT
+    --icon-fs: 2rem;
+  }
+
+  .header__primary {
+    // PADDING
+    --header-pri-padding: 0.75rem 1rem;
+
+    // GAP
+    --game-status-gap: 1.25rem;
+
+    // FONT-SIZE
+    --game-status-fs: 1.25rem;
+
+    // WIDTH & HEIGHT
+    --small-ball-width: 1.25rem;
+
+    // MARGIN
+    --game-status-margin-rgt: 0.75rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  :root {
+    // FONT
+    --icon-fs: 1.75rem;
+  }
+
+  .header__primary {
+    // PADDING
+    --header-pri-padding: 0.5rem 1rem;
+
+    // GAP
+    --game-status-gap: 1rem;
+    --turn-gap: 0.4rem;
+
+    // FONT-SIZE
+    --game-status-fs: 1.125rem;
+
+    // WIDTH & HEIGHT
+    --small-ball-width: 1.125rem;
+
+    // MARGIN
+    --game-status-margin-rgt: 0rem;
+  }
+}

@@ -1,0 +1,64 @@
+.main {
+  height: 100dvh;
+  overflow: hidden;
+
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+
+.header__primary {
+  // PADDING
+  --header-pri-padding: 0.5rem 1.25rem;
+
+  // GAP
+  --game-status-gap: 1.75rem;
+  --turn-gap: 0.5rem;
+
+  // FONT-SIZE
+  --game-status-fs: 1.5rem;
+
+  // WIDTH & HEIGHT
+  --small-ball-width: 1.5rem;
+
+  // MARGIN
+  --game-status-margin-rgt: 1rem;
+
+  background-color: pink;
+  justify-content: space-between;
+  padding: var(--header-pri-padding);
+
+  .game__status {
+    font-size: var(--game-status-fs);
+    gap: var(--game-status-gap);
+    margin-right: var(--game-status-margin-rgt);
+
+    .turn {
+      gap: var(--turn-gap);
+
+      .small__ball {
+        display: block;
+        width: var(--small-ball-width);
+        aspect-ratio: 1/1;
+        border-radius: 50%;
+        background-color: black;
+      }
+
+      &__left {
+      }
+    }
+
+    .score {
+      &__curr {
+      }
+    }
+  }
+}
+
+.game {
+  &__area {
+    background-image: url(../../Images/cloud_three.jpg);
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}

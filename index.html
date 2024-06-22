@@ -13,11 +13,46 @@
       rel="stylesheet"
     />
 
+    <!-- ICON -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
     <!-- CSS -->
     <link rel="stylesheet" href="CSS/style.css" />
 
     <!-- JS -->
     <script src="JS/script.js" type="module"></script>
   </head>
-  <body></body>
+  <body>
+    <main class="main">
+      <!-- HEADER -->
+      <header class="header__primary flex">
+        <button class="btn icon__btn">
+          <ion-icon
+            class="icon icon__setting"
+            name="settings-outline"
+          ></ion-icon>
+        </button>
+
+        <div class="game__status flex">
+          <span class="turn flex"
+            ><span class="small__ball"></span>X
+            <span class="turn__left">3</span></span
+          >
+          <span class="score">
+            Score: <span class="score__curr">00</span>
+          </span>
+        </div>
+      </header>
+
+      <!-- GAME AREA -->
+      <section class="game game__area"></section>
+    </main>
+  </body>
 </html>
