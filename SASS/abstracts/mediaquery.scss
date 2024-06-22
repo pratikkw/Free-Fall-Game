@@ -45,4 +45,16 @@
     // MARGIN
     --game-status-margin-rgt: 0rem;
   }
+
+  .game {
+    // WIDTH & HEIGHT
+    --spikes-height: 1.75rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .game {
+    // WIDTH & HEIGHT
+    --spikes-height: 1.5rem;
+  }
 }

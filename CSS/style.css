@@ -76,11 +76,19 @@ body {
         border-radius: 50%;
         background-color: black; }
 
-.game__area {
-  background-image: url(../../Images/cloud_three.jpg);
-  background-position: bottom;
-  background-size: cover;
-  background-repeat: no-repeat; }
+.game {
+  --spikes-height: 2rem; }
+  .game__area {
+    background-image: url(../../Images/cloud_three.jpg);
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat; }
+  .game .spikes {
+    background-image: url(../../Images/spikes-3.svg);
+    background-repeat: repeat;
+    background-size: contain;
+    background-position: center;
+    height: var(--spikes-height); }
 
 .icon {
   font-size: var(--icon-fs); }
@@ -104,4 +112,10 @@ body {
     --turn-gap: 0.4rem;
     --game-status-fs: 1.125rem;
     --small-ball-width: 1.125rem;
-    --game-status-margin-rgt: 0rem; } }
+    --game-status-margin-rgt: 0rem; }
+  .game {
+    --spikes-height: 1.75rem; } }
+
+@media only screen and (max-width: 400px) {
+  .game {
+    --spikes-height: 1.5rem; } }

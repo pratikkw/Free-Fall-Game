@@ -55,10 +55,21 @@
 }
 
 .game {
+  // WIDTH & HEIGHT
+  --spikes-height: 2rem;
+
   &__area {
     background-image: url(../../Images/cloud_three.jpg);
     background-position: bottom;
     background-size: cover;
     background-repeat: no-repeat;
+  }
+
+  .spikes {
+    background-image: url(../../Images/spikes-3.svg);
+    background-repeat: repeat;
+    background-size: contain;
+    background-position: center;
+    height: var(--spikes-height);
   }
 }
