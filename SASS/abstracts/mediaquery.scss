@@ -20,6 +20,18 @@
     // MARGIN
     --game-status-margin-rgt: 0.75rem;
   }
+
+  .game {
+    // WIDTH & HEIGHT
+    --ladder-width: 10rem;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .game {
+    // WIDTH & HEIGHT
+    --ladder-width: 9rem;
+  }
 }
 
 @media only screen and (max-width: 500px) {
@@ -49,6 +61,7 @@
   .game {
     // WIDTH & HEIGHT
     --spikes-height: 1.75rem;
+    --ladder-width: 7rem;
   }
 }
 
@@ -56,5 +69,6 @@
   .game {
     // WIDTH & HEIGHT
     --spikes-height: 1.5rem;
+    --ladder-width: 6.5rem;
   }
 }

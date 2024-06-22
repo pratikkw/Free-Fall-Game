@@ -23,7 +23,7 @@
   // MARGIN
   --game-status-margin-rgt: 1rem;
 
-  background-color: pink;
+  background-color: hsl(200, 85%, 89%);
   justify-content: space-between;
   padding: var(--header-pri-padding);
 
@@ -40,7 +40,11 @@
         width: var(--small-ball-width);
         aspect-ratio: 1/1;
         border-radius: 50%;
-        background-color: black;
+        background-image: linear-gradient(
+          250deg,
+          #ff7a00,
+          hsla(29, 100%, 75%, 0.504)
+        );
       }
 
       &__left {
@@ -57,6 +61,10 @@
 .game {
   // WIDTH & HEIGHT
   --spikes-height: 2rem;
+  --ladder-width: 12rem;
+  --ladder-height: 1.25vh;
+
+  position: relative;
 
   &__area {
     background-image: url(../../Images/cloud_three.jpg);
@@ -71,5 +79,22 @@
     background-size: contain;
     background-position: center;
     height: var(--spikes-height);
+  }
+
+  .ladder {
+    position: absolute;
+    background-color: #222;
+    width: var(--ladder-width);
+    height: var(--ladder-height);
+
+    &__one {
+      bottom: 40vh;
+      left: 50vw;
+    }
+
+    &__two {
+      bottom: 60vh;
+      left: 30vw;
+    }
   }
 }
