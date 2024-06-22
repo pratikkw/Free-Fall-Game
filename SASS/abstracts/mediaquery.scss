@@ -1,3 +1,11 @@
+@media only screen and (hover: hover) {
+  .start {
+    &__btn:hover {
+      background-color: var(--start-btn-hover-bk-clr);
+    }
+  }
+}
+
 @media only screen and (max-width: 1000px) {
   :root {
     // FONT
@@ -28,6 +36,14 @@
 }
 
 @media only screen and (max-width: 700px) {
+  :root {
+    // INSET
+    --sound-btn-top: 1.25rem;
+    --sound-btn-left: 1.25rem;
+    --help-btn-top: 1.25rem;
+    --help-btn-right: 1.25rem;
+  }
+
   .game {
     // WIDTH & HEIGHT
     --ladder-width: 9rem;
@@ -37,7 +53,7 @@
 @media only screen and (max-width: 500px) {
   :root {
     // FONT
-    --icon-fs: 1.75rem;
+    // --icon-fs: 1.75rem;
   }
 
   .header__primary {

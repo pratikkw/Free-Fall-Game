@@ -29,7 +29,19 @@ button {
   font: inherit; }
 
 :root {
-  --icon-fs: 2.5rem; }
+  --start-bk-clr: hsla(0, 0%, 0%, 0.85);
+  --start-btn-bk-clr: #35b0ed;
+  --start-btn-hover-bk-clr: #5dc0f1;
+  --white-clr: hsl(0, 0%, 100%);
+  --black-clr: hsl(0, 0%, 0%);
+  --icon-fs: 2.5rem;
+  --help-index: 300;
+  --start-index: 200;
+  --top-lvl-icon-index: 500;
+  --sound-btn-top: 1.5rem;
+  --sound-btn-left: 1.5rem;
+  --help-btn-top: 1.5rem;
+  --help-btn-right: 1.5rem; }
 
 body {
   min-height: 100dvh;
@@ -46,6 +58,26 @@ body {
   display: flex;
   align-items: center;
   gap: 1rem; }
+
+.icon__sound,
+.icon__help,
+.icon__muted,
+.icon__close {
+  color: var(--white-clr); }
+
+.sound__btn,
+.help__btn {
+  z-index: var(--top-lvl-icon-index);
+  position: absolute;
+  display: none; }
+
+.sound__btn {
+  top: var(--sound-btn-top);
+  left: var(--sound-btn-left); }
+
+.help__btn {
+  top: var(--help-btn-top);
+  right: var(--help-btn-right); }
 
 .main {
   height: 100dvh;
@@ -104,8 +136,44 @@ body {
       bottom: 60vh;
       left: 30vw; }
 
+.help {
+  position: absolute;
+  width: 100%;
+  height: 100dvh;
+  z-index: var(--help-index);
+  background-image: radial-gradient(#616161 0.5px, transparent 0.5px), radial-gradient(#616161 0.5px, #000000 0.5px);
+  background-size: 20px 20px;
+  background-position: 0 0, 10px 10px; }
+
+.start {
+  --start-btn-width: 18rem;
+  --start-btn-fs: 4rem;
+  position: fixed;
+  z-index: var(--start-index);
+  width: 100%;
+  height: 100dvh;
+  background-color: var(--start-bk-clr);
+  display: grid;
+  place-items: center; }
+  .start__btn {
+    font-size: var(--start-btn-fs);
+    width: var(--start-btn-width);
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background-color: var(--start-btn-bk-clr);
+    border: 5px solid var(--white-clr);
+    color: var(--white-clr);
+    transition: all 0.3s ease-in; }
+
+.hide {
+  display: none; }
+
 .icon {
   font-size: var(--icon-fs); }
+
+@media only screen and (hover: hover) {
+  .start__btn:hover {
+    background-color: var(--start-btn-hover-bk-clr); } }
 
 @media only screen and (max-width: 1000px) {
   :root {
@@ -120,12 +188,15 @@ body {
     --ladder-width: 10rem; } }
 
 @media only screen and (max-width: 700px) {
+  :root {
+    --sound-btn-top: 1.25rem;
+    --sound-btn-left: 1.25rem;
+    --help-btn-top: 1.25rem;
+    --help-btn-right: 1.25rem; }
   .game {
     --ladder-width: 9rem; } }
 
 @media only screen and (max-width: 500px) {
-  :root {
-    --icon-fs: 1.75rem; }
   .header__primary {
     --header-pri-padding: 0.5rem 1rem;
     --game-status-gap: 1rem;

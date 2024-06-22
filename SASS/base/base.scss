@@ -34,8 +34,30 @@ button {
 }
 
 :root {
+  // BK CLR
+  --start-bk-clr: hsla(0, 0%, 0%, 0.85);
+
+  // BTN CLR
+  --start-btn-bk-clr: #35b0ed;
+  --start-btn-hover-bk-clr: #5dc0f1;
+
+  // CLR
+  --white-clr: hsl(0, 0%, 100%);
+  --black-clr: hsl(0, 0%, 0%);
+
   // FONT
   --icon-fs: 2.5rem;
+
+  // INDEX
+  --help-index: 300;
+  --start-index: 200;
+  --top-lvl-icon-index: 500;
+
+  // INSET
+  --sound-btn-top: 1.5rem;
+  --sound-btn-left: 1.5rem;
+  --help-btn-top: 1.5rem;
+  --help-btn-right: 1.5rem;
 }
 
 body {

@@ -30,10 +30,33 @@
     <script src="JS/script.js" type="module"></script>
   </head>
   <body>
+    <button class="btn sound__btn">
+      <ion-icon class="icon icon__sound" name="volume-high-outline"></ion-icon>
+      <ion-icon
+        class="icon icon__muted hide"
+        name="volume-mute-outline"
+      ></ion-icon>
+    </button>
+    <button class="btn help__btn">
+      <ion-icon class="icon icon__help" name="help-circle-outline"></ion-icon>
+      <ion-icon
+        class="icon icon__close hide"
+        name="close-circle-outline"
+      ></ion-icon>
+    </button>
+
+    <!-- HELP SECTION -->
+    <section class="help hide"></section>
+
+    <!-- START SECTION -->
+    <section class="start hide">
+      <button class="btn start__btn">Start</button>
+    </section>
+
     <main class="main">
       <!-- HEADER -->
       <header class="header__primary flex">
-        <button class="btn icon__btn">
+        <button class="btn setting__btn">
           <ion-icon
             class="icon icon__setting"
             name="settings-outline"

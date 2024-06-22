@@ -1,3 +1,27 @@
+.icon__sound,
+.icon__help,
+.icon__muted,
+.icon__close {
+  color: var(--white-clr);
+}
+
+.sound__btn,
+.help__btn {
+  z-index: var(--top-lvl-icon-index);
+  position: absolute;
+  display: none;
+}
+
+.sound__btn {
+  top: var(--sound-btn-top);
+  left: var(--sound-btn-left);
+}
+
+.help__btn {
+  top: var(--help-btn-top);
+  right: var(--help-btn-right);
+}
+
 .main {
   height: 100dvh;
   overflow: hidden;

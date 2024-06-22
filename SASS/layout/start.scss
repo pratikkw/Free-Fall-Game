@@ -1,0 +1,29 @@
+.start {
+  // WIDTH & HEIGHT
+  --start-btn-width: 18rem;
+
+  // FONT
+  --start-btn-fs: 4rem;
+
+  position: fixed;
+  z-index: var(--start-index);
+
+  width: 100%;
+  height: 100dvh;
+  background-color: var(--start-bk-clr);
+
+  display: grid;
+  place-items: center;
+
+  &__btn {
+    font-size: var(--start-btn-fs);
+    width: var(--start-btn-width);
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background-color: var(--start-btn-bk-clr);
+    border: 5px solid var(--white-clr);
+    color: var(--white-clr);
+
+    transition: all 0.3s ease-in;
+  }
+}
